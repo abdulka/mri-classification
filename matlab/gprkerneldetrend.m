@@ -1,7 +1,7 @@
-%% [Kd,Yd,theta] = gprkerneldetrend(K,DATA,DT,Y,COVARFUNC) adjusts the kernel
-%  matrix K for the covariets X, where the argument DATA=X*X'. The
-%  adjustment is based on the true indices in DT. Y is the raw input data
-%  and COVARFUNC the covariance function, that is required to return the
+%% [Kd,Yd,theta] = gprkerneldetrend(K,X,DATA,DT,Y,COVARFUNC) adjusts the kernel
+%  matrix K for the covariets X, where the argument DATA=X*X' can be empty. The
+%  adjustment is based on the index vector DT. Y is the raw input data
+%  and COVARFUNC the optional covariance function, that is required to return the
 %  covariance, given DATA, the gradient, and the Hession w.r.t. the
 %  hyperparameters. If no covariance function is provided, the default is a
 %  squared exponential with linear and constant component. Residual noise
